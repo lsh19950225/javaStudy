@@ -1,0 +1,23 @@
+package days07;
+
+/**
+ * @author lsh
+ * @date 2024. 7. 9. - 오후 12:07:48
+ * @subject 제어문 + 배열 활용
+ * @content
+ *
+ */
+public class Ex03 {
+
+	public static void main(String[] args) {
+		
+		String printCard = String.join("-", cardArr);
+		System.out.println( printCard );
+		
+		
+		
+		
+
+	} // main
+
+} // class

@@ -1,0 +1,27 @@
+package days07;
+
+public class Test02 {
+
+	public static void main(String[] args) {
+		
+		int first = 1;
+		int second = 2;
+		System.out.printf("%d+%d+", first, second);
+		
+		int sum = first + second;
+		for (int next = 1; next <= 8; next++) {
+			next = first + second;
+			System.out.printf("%d+", next);
+			sum += next;
+			first = second;
+			second = next;
+		}
+		System.out.printf("=%d", sum);
+		
+		
+		
+
+	} // main
+
+
+} // class

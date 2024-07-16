@@ -1,0 +1,41 @@
+package days10;
+
+import java.lang.reflect.Array;
+import java.util.Arrays;
+import java.util.Iterator;
+
+public class Test05 {
+
+	public static void main(String[] args) {
+
+		//int [] m = {2,6,4,3,1};
+
+		//bubbleSearch(m);
+
+		int [] m = {1,2,3};
+
+		int deleteIndex = 1;
+
+		int index = 2;
+
+		for (int i = deleteIndex+1; i < m.length; i++) {
+			m[i-1] = m[i];
+		}
+		m[m.length-2] = 4;
+		System.out.println(Arrays.toString(m));
+
+
+	} // main
+
+	//private static void bubbleSearch(int[] m) {
+
+
+//}
+
+/*private static int binarySearch(int[] m, int n) {
+
+
+		return -1;
+	}*/
+
+} // class

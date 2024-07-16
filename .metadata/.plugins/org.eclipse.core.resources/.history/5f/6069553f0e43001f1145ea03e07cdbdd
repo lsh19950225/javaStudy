@@ -1,0 +1,86 @@
+package days11;
+
+/**
+ * @author lsh
+ * @date 2024. 7. 15. - 오후 5:12:11
+ * @subject
+ * @content
+ *
+ */
+public class Ex06 {
+
+	public static void main(String[] args) {
+
+		int [][] m = new int [5][5];
+		
+		fillM3(m);
+		
+		//fillM2(m);
+		//fillM(m);
+
+		dispM(m);
+
+	} // main
+	
+	/*
+	[05][10][15][20][25]
+	[04][09][14][19][24]
+	[03][08][13][18][23]
+	[02][07][12][17][22]
+	[01][06][11][16][21]
+	*/
+
+	private static void fillM3(int[][] m) {
+		int count = 0;
+		for (int i = 0; i < m.length; i++) { // 행갯수
+			for (int j = 0; j < m[i].length; j++) { // 열갯수
+				// 열갯수
+				m[i][j] = (m[i].length - i)*j+1;
+				//                  5            0    0
+			} // for j
+			System.out.println();
+		} // for i
+
+	}
+
+	private static void fillM2(int[][] m) {
+		int count = 0;
+		for (int i = 0; i < m.length; i++) { // 행갯수
+			for (int j = 0; j < m[i].length; j++) { // 열갯수
+				// 열갯수
+				m[i][j] = 25 - (m[i].length * i + j);
+			} // for j
+			System.out.println();
+		} // for i
+
+	}
+
+	private static void fillM(int[][] m) {
+		int count = 0;
+		for (int i = 0; i < m.length; i++) { // 행갯수
+			for (int j = 0; j < m[i].length; j++) { // 열갯수
+				// 열갯수
+				m[i][j] = m[i].length * i + j+1;
+			} // for j
+			System.out.println();
+		} // for i
+
+	}
+
+	private static void dispM(int[][] m) {
+
+		System.out.println();
+		System.out.println();
+		System.out.println();
+		System.out.println(); 
+
+		for (int i = 0; i < m.length; i++) { // 행갯수
+			for (int j = 0; j < m[i].length; j++) { // 열갯수
+				System.out.printf("[%02d]", m[i][j]);
+			} // for j
+			System.out.println();
+		} // for i
+
+	}
+
+} // class

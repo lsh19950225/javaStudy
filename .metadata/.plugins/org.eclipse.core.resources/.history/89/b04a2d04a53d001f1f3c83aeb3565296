@@ -1,0 +1,19 @@
+package days07;
+
+import java.util.Spliterator;
+
+public class Ex03_02 {
+
+	public static void main(String[] args) {
+		//주민등록번호
+		String rrn = "123456-1234567";
+		String [] regex = "-".split(rrn);
+		
+		
+		
+		
+		
+
+	}
+
+}

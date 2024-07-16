@@ -1,0 +1,49 @@
+package days11;
+
+/**
+ * @author lsh
+ * @date 2024. 7. 15. - 오후 5:12:11
+ * @subject
+ * @content
+ *
+ */
+public class Ex06 {
+
+	public static void main(String[] args) {
+
+		int [][] m = new int [5][5];
+		
+		fillM(m);
+
+		dispM(m);
+
+	} // main
+
+	private static void fillM(int[][] m) {
+		int count = 1;
+		for (int i = 0; i < m.length; i++) { // 행갯수
+			for (int j = 0; j < m[i].length; j++) { // 열갯수
+				m[i][j] = count++;
+			} // for j
+			System.out.println();
+		} // for i
+		
+	}
+
+	private static void dispM(int[][] m) {
+
+		System.out.println();
+		System.out.println();
+		System.out.println();
+		System.out.println(); 
+
+		for (int i = 0; i < m.length; i++) { // 행갯수
+			for (int j = 0; j < m[i].length; j++) { // 열갯수
+				System.out.printf("[%02d]", m[i][j]);
+			} // for j
+			System.out.println();
+		} // for i
+
+	}
+
+} // class

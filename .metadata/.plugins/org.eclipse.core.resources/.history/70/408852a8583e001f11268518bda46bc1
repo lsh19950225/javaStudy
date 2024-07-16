@@ -1,0 +1,46 @@
+package days08;
+
+/**
+ * @author lsh
+ * @date 2024. 7. 10. - 오전 9:47:42
+ * @subject
+ * @content
+ *
+ */
+public class Ex02 {
+
+	public static void main(String[] args) {
+		/*
+		// 검색(search)
+		// 1) 순차검색 (Sequence search)
+		// 2) 이진검색 (Binary search)
+		int [] m = new int [20];
+		// 1~100 임의의 정수
+		fillM(m);
+		dispM(m);
+		*/
+		
+		for (int i = 'A'; i < 'Z'; i++) {
+			System.out.printf("%c", i);
+		}
+		
+		
+		
+
+	} // main
+
+	private static void fillM(int[] m) {
+		for (int i = 0; i < m.length; i++) {
+			int mN;
+			mN = (int)(Math.random()*100)+1;
+			m[i] = mN;
+		}
+		
+	}
+
+	private static void dispM(int[] m) {
+		
+		
+	}
+
+} // class

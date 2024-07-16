@@ -1,0 +1,23 @@
+package days08;
+
+import java.util.Random;
+
+/**
+ * @author lsh
+ * @date 2024. 7. 10. - 오전 11:16:48
+ * @subject
+ * @content
+ *
+ */
+public class Ex01_03 {
+
+	public static void main(String[] args) {
+		
+		new Random().ints(1, 46).distinct().limit(6).forEach(System.out::println);
+		
+		
+		
+
+	} // main
+
+} // class

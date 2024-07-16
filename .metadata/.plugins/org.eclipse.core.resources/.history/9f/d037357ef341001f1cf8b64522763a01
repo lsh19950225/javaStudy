@@ -1,0 +1,26 @@
+package days10;
+
+public class Test04 {
+
+	public static void main(String[] args) {
+		
+		String name;
+		int age, kor, eng, mat, tot, rank;
+		double avg;
+		
+		final int STUDENT_COUNT = 30;
+		
+		String [] names = new String [STUDENT_COUNT];
+		int [] ages = new int [STUDENT_COUNT];
+		int [] kors = new int [STUDENT_COUNT];
+		int [] engs = new int [STUDENT_COUNT];
+		int [] mats = new int [STUDENT_COUNT];
+		int [] tots = new int [STUDENT_COUNT];
+		int [] ranks = new int [STUDENT_COUNT];
+		double [] avgs = new double [STUDENT_COUNT];
+		
+		
+
+	}
+
+}

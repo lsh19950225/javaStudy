@@ -1,0 +1,35 @@
+package days09;
+
+import java.util.Date;
+
+/**
+ * @author lsh
+ * @date 2024. 7. 11. - 오후 12:06:52
+ * @subject
+ * @content
+ *
+ */
+public class Ex01_02 {
+
+	public static void main(String[] args) {
+		
+		// 1. 요일
+		// 2. 마지막 날짜
+		// Date : java.uitl 로
+		Date d = new Date(2022-1900, 7-1, 1); // -1900, -1 해줘야됨. : 정해진 것.
+		System.out.println(d.toLocaleString()); // 취소선 : 사라질 메서드라는 뜻이며, 오늘 날짜와 시간정보를 알려줌.
+		
+		int dayOfWeek = d.getDay(); // 내부에 배열요소 0부터
+		System.out.println(dayOfWeek);
+		
+		d.setMonth( d.getMonth()+1 ); // 월을 내가 set(설정)
+		
+		
+		
+		
+		
+		
+
+	} // main
+
+} // class

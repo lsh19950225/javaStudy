@@ -1,0 +1,37 @@
+package days09;
+
+import java.util.Arrays;
+
+import javax.sound.midi.SysexMessage;
+
+/**
+ * @author lsh
+ * @date 2024. 7. 11. - 오후 2:36:48
+ * @subject 정수 2진수 출력 (int)
+ * @content 	 8진수 출력
+ *						 16진수 출력
+ */
+public class Ex04 {
+
+	public static void main(String[] args) {
+		// 10 => 00000000 00000000 00000000 00001010
+		int n = 10;
+		int share, reminder;
+		
+		int [] binaryArr = new int [32];
+		// System.out.println(Arrays.toString(binaryArr));
+		for (int i = 0; i < binaryArr.length; i++) {
+			System.out.printf("%d", binaryArr[i]);
+			if(i%8==7) System.out.println(" ");
+		}
+		
+		while (n >= 0) { // 또는 n != 0
+			share = n/2;
+			reminder = n%2;
+			System.out.printf("%d", reminder);
+			n = share; // 몫	
+		}
+
+	} // main
+
+} // class

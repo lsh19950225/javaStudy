@@ -1,0 +1,18 @@
+package days09;
+
+public class Ex05_04 {
+
+	public static void main(String[] args) {
+		// int [] m = new int [24];
+		// int [][] m = new int [4][6];
+		int [][][] m = new int [2][3][4]; // 2면 3행 4열
+		
+		System.out.println( m[0].length ); // 3차원 : 면 갯수
+		System.out.println( m[1].length ); // 3차원 : 면 갯수
+
+		
+		
+		
+	}
+
+}

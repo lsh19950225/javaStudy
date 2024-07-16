@@ -1,0 +1,43 @@
+package days06;
+
+/**
+ * @author lsh
+ * @date 2024. 7. 8. - 오후 5:08:32
+ * @subject 
+ * @content
+ *
+ */
+public class Ex09 {
+
+	public static void main(String[] args) {
+
+		/*for (int i = 1; i <= 4; i++) {
+			// System.out.println("****");
+			for (int j = 1; j <= 4; j++) {
+				System.out.print("*");
+			}
+			System.out.println();
+		}*/
+
+		for (int i = 1; i <= 4; i++) {
+			switch (i-1) {
+			case -3:
+				System.out.println("****");
+				
+			case -2:
+				System.out.println("***");
+				
+			case -1:
+				System.out.println("**");
+				
+			default:
+				System.out.println("*");
+				break;
+			}
+		}
+
+
+
+	}
+
+}

@@ -1,0 +1,31 @@
+package days11;
+
+/**
+ * @author lsh
+ * @date 2024. 7. 15. - 오후 4:14:29
+ * @subject
+ * @content
+ *
+ */
+public class Ex03 {
+
+	public static void main(String[] args) {
+
+		int  n = 71;
+		int [] m = { 3, 92, 3, 40, 71, 91, 61, 92, 76, 71, 59, 54, 64, 48, 66, 92, 25, 20, 71, 37 };
+		
+		int index = indexOf(m, n);
+		System.out.println(index);
+
+	} // main
+
+	private static int indexOf(int[] m, int n) {
+		
+		for (int i = 0; i < m.length; i++) {
+			if (m[i] == n) return i;
+		}
+		
+		return -1;
+	}
+
+} // class

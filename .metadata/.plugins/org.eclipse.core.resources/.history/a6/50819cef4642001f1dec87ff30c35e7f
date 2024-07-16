@@ -1,0 +1,19 @@
+package days11;
+
+import java.util.Arrays;
+
+public class Ex01 {
+
+	public static void main(String[] args) {
+		
+		int [] m = {1,2,3};
+		int [] n = new int [m.length+1];
+		int index = 1;
+		System.arraycopy(m, 0, n, 0, index);
+		n[index] = 4;
+		System.arraycopy(m, 1, n, index+1, m.length-1);
+		System.out.println(Arrays.toString(n));
+
+	}
+
+}

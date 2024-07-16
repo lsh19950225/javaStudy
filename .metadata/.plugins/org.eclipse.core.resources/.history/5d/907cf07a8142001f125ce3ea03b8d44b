@@ -1,0 +1,21 @@
+package days11;
+
+/**
+ * @author lsh
+ * @date 2024. 7. 15. - 오후 4:47:18
+ * @subject
+ * @content
+ *
+ */
+public class Ex05 {
+
+	public static void main(String[] args) {
+		
+		// 로또 게임 + (게임 횟수 입력)
+		int n = 5;
+		// int [] lotto = new int [6*5];
+		int [][] lotto = new int [n][6];
+		
+	} // main
+
+} // class

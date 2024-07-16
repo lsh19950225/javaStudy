@@ -1,0 +1,49 @@
+package days07;
+
+public class Test01 {
+
+	public static void main(String[] args) {
+
+		for (int i = 1; i <= 4; i++) { // 행 갯수
+
+			for (int j = 1; j <= i; j++) {
+				System.out.print("*");
+			}
+			System.out.println();
+		}
+
+
+		for (int i = 1; i <= 4; i++) {
+
+			for (int j = 1; j <= 5-i ; j++) {
+				System.out.print("*");
+			}
+			System.out.println();
+		}
+
+
+		//      이등변삼각형
+		//      __*  i=1  j=2   j=1
+		//      _*** i=2  j=1   j=3
+		//      *****i=3  j=0   j=5
+		//              2*i-1
+		for (int i = 1; i <= 3; i++) {
+			for (int j = 1; j <= 5; j++) {
+				System.out.print(i+j>=4 && j-i<=2?"*":"_");
+				/*if (i+j>=4 && j-i<=2) {
+					System.out.print("*");
+				} else {
+					System.out.print("_");
+				}*/
+			}
+			System.out.println();
+		}
+
+
+
+
+
+
+	} // main
+
+} // class

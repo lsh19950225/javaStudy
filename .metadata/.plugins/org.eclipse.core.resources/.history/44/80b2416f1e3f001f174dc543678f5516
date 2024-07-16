@@ -1,0 +1,145 @@
+package days08;
+
+import java.util.Calendar;
+
+public class Test04 {
+
+	private static final String rrn = null;
+
+	public static void main(String[] args) {
+
+		String rrn = "950225-1235610";
+
+		int americanA = greamericanA(rrn);
+		System.out.printf("만 나이 : %d\n", americanA);
+
+	} // main
+
+	private static int getYearAge(String rrn) {
+		//                         "1995년 2월 25일"        "1995"
+		int birthYear = Integer.parseInt( Ex03.getBirthday(rrn).substring(0, 4) );
+		Calendar cal = Calendar.getInstance();
+		int thisYear = cal.get(Calendar.YEAR);
+
+		return thisYear - birthYear;
+	}
+
+	private static int greamericanA(String rrn2) {
+
+		int americanA = getYearAge(rrn);
+
+		int thisM = 7, thisD = 11;
+		int birthM, birthD;
+
+		birthM = Integer.parseInt(rrn.substring(2, 4));
+		birthD = Integer.parseInt(rrn.substring(4, 6));
+
+		if (thisM < birthM) {
+			americanA --;
+		} else if (thisM == birthM && thisD < birthD) {
+			americanA --;
+		}
+		return americanA;
+
+
+
+
+
+		//참조에 의한 호출이라고 부르며,
+		//value 랑 다르게 값이 아닌 주소값 메모리 자체를 넘기는 개념이다.
+
+
+
+
+		int money = 125760;
+		int count = 0;
+		int share, reminder; // 몫, 나머지 변수
+
+		int [] unit = { 50000, 10000, 5000, 1000, 500, 100, 50, 10, 5, 1 };
+		String [] sunit = { "5만원", "1만원", "5천원", "1천원", "5백원", "1백원", "5십원", "1십원", "5원", "1원" };
+
+		for (int i = 0; i < unit.length; i++) {
+			count = money / unit[i];
+			reminder = money % unit[i];
+			System.out.printf("%d원 : %d 개\t\t %d\n", unit[i], count, reminder);
+			money = reminder;
+
+
+
+			int moneyArr = 125550;
+			int countArr = 0;
+			int shareArr, reminderArr;
+			
+			int [] unitS = { 50000, 10000, 5000, 1000, 500, 100, 50, 10, 5, 1 };
+			
+			for (int j = 0; j < unitS.length; j++) {
+				
+				countArr = moneyArr / unitS[i];
+				reminderArr = moneyArr % unitS[i];
+				System.out.printf("%d원 : %d개 : %d\n", unitS[i], countArr, reminderArr);
+				
+				moneyArr = reminderArr;
+			}
+
+
+
+
+
+
+
+
+			
+			
+
+
+
+
+
+			int americanAg = getYearAge(rrn);
+
+			int thisMonth = 7, thisDay = 11;
+			int birthMM, birthDD;
+			
+			birthMM = Integer.parseInt(rrn.substring(2, 4));
+			birthDD = Integer.parseInt(rrn.substring(4, 6));
+
+			if (thisMonth<birthMM) {
+				americanAg--;
+			} else if (thisMonth == birthMM && thisDay < birthDD) {
+				americanAg--;
+			}
+
+			return americanAg;
+			
+			
+			
+			
+			
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		}
+
+	}
+
+	/*int lottoN;
+			lottoN = (int)(Math.random()*10)+1;
+			int index = 0;
+			boolean check21 = true;
+	
+			if (isDuplicateLotto(lottoN, index, check21))*/

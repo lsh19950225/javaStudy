@@ -1,0 +1,28 @@
+package days09;
+
+import java.util.Date;
+
+/**
+ * @author lsh
+ * @date 2024. 7. 11. - 오후 12:06:52
+ * @subject
+ * @content
+ *
+ */
+public class Ex01_02 {
+
+	public static void main(String[] args) {
+		
+		// 1. 요일
+		// 2. 마지막 날짜
+		// Date : java.uitl 로
+		Date d = new Date();
+		System.out.println(d.toLocaleString()); // 취소선 : 사라질 메서드라는 뜻
+		
+		
+		
+		
+
+	} // main
+
+} // class
