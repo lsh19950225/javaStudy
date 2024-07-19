@@ -5,8 +5,8 @@ package days14;
 // 사원 클래스
 // 모든 사원들이 공통적으로 가지고 있을 멤버들을 선언.
 // @Getter
-public class Employee {
-
+public abstract class Employee {
+		// 클래스도 불완전해 추상클래스 사용해야 됨.
 	//필드
 	private String name; // 사원명
 	private String addr; // 주소
@@ -67,8 +67,15 @@ public class Employee {
 		System.out.printf("사원명:%s, 주소:%s, 연락처:%s, 입사일자:%s\n", this.name, this.addr, this.tel, this.hiredate);
 	}
 	
+	/*
+	// 다른언어 가상메서드 자바에서는 x
+	public int getPay() {
+		return 0;
+	}
+	*/
 	
-	
-
+	// 추상메서드 : 몸체가 구성이 안된 불완전한 메서드
+	// This method requires a body instead of a semicolon : 몸체가 없다.
+	public abstract int getPay();
 
 } // class
