@@ -3,7 +3,8 @@ package days11;
 /**
  * @author lsh
  * @date 2024. 7. 15. - 오후 4:14:29
- * @subject
+ * @subject 문제) m 배열에서 n 을 찾아서
+		       				모든 index 값을 출력
  * @content
  *
  */
@@ -22,7 +23,7 @@ public class Ex03 {
 		}
 		// System.out.println(index);
 
-		// 문제) m  배열에서 n 을 찾아서
+		// 문제) m 배열에서 n 을 찾아서
 		//       모든 index 값을 출력
 
 	} // main

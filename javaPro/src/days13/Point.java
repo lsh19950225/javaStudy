@@ -25,8 +25,14 @@ public class Point {
 	}
 
 	public void dispPoint() {
-		System.out.printf("x=%d, y=%d\n", x, y);
+		System.out.printf("x=%d, y=%d\n", this.x, this.y);
 	}
+	
+	@Override
+	public String toString() {
+		return "Point [x=" + x + ", y=" + y + "]";
+	}
+
 	// Duplicate method plusPoint(Point) in type Point : 중복함수로 인식x 자료형
 	public void plusPoint(Point p) {
 
