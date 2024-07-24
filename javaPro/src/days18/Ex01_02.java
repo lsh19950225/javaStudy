@@ -1,56 +1,55 @@
-package days17;
+package days18;
 
 import java.util.Calendar;
 import java.util.Date;
 import java.util.GregorianCalendar;
 
-/**
- * @author lsh
- * 	@date 2024. 7. 23. - 오후 3:46:02
- * @subject
- *	@content
- * 
- */
-public class Ex08_03 {
+public class Ex01_02 {
 
 	public static void main(String[] args) {
-
+		// Date 클래스
+		// Calendar 클래스
+		
 		int year = 2024;
 		int month = 6;
 		int date = 1;
 
+		// 0(일요일) ~ 6(토요일)
 		int dayOfWeek = getDayOfWeek(year,month,date); // 1(월)
 		int lastDay = getLastDay(year,month);
 
 		// 24.6.30(시작날짜) ~ 42일
-		Date start = new Date(year - 1900, month -1, 1);
-		start.setDate(start.getDate() - dayOfWeek);
+		Calendar start = new GregorianCalendar(year, month-1, 1);
+		start.add(Calendar.DATE, -dayOfWeek);
+		
+		// Calendar -> Date 형변환
+		// Date -> Calendar 형변환
+		Date sd = start.getTime();
+		//System.out.println(sd.toLocaleString());
+		
 		// System.out.println(start.toLocaleString());
-
+		
 		System.out.println("=".repeat(22));
 		System.out.println("=".repeat(22));
 		for (int i = 1; i <= 42; i++) {
 			// System.out.println(start.toLocaleString());
-			int cmonth = start.getMonth()+1;
-			if ( cmonth == month+1 ) System.out.printf("[%d]\t", start.getDate());
-			else if ( cmonth == month-1 ) System.out.printf("(%d)\t", start.getDate());
-			else System.out.printf("%d\t", start.getDate());
+			int cmonth = start.get(Calendar.MONTH) +1;
+			if ( cmonth == month+1 ) System.out.printf("[%d]\t", start.get(Calendar.DATE));
+			else if ( cmonth == month-1 ) System.out.printf("(%d)\t", start.get(Calendar.DATE));
+			else System.out.printf("%d\t", start.get(Calendar.DATE));
 
 			if(i%7==0) System.out.println();
-			start.setDate(start.getDate() + 1);
+			start.add(Calendar.DATE, 1);
 		}
 		System.out.println();
 		System.out.println("=".repeat(22));
-
+		
 	} // main
 
 	private static int getLastDay(int year, int month) {
 
-		Date d = new Date(year - 1900, month -1, 1);
-		d.setMonth(d.getMonth() + 1);
-		d.setDate(d.getDate() - 1);
-
-		return d.getDate(); // 31	
+		Calendar c = new GregorianCalendar(year, month-1, 1);
+		return c.getActualMaximum(Calendar.DATE);
 
 	}
 
@@ -66,9 +65,9 @@ public class Ex08_03 {
 
 		private static int getDayOfWeek(int year, int month, int date) {
 
-			Date d = new Date(year - 1900, month -1, date);
+			Calendar c = new GregorianCalendar(year, month-1, 1);
 
-			return d.getDay(); // 0일요일 ~ 6토요일
+			return c.get(Calendar.DAY_OF_WEEK) -1;
 		}
 
 	} // class
