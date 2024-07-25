@@ -52,14 +52,14 @@ public class Ex05 {
 		} while ( Character.toUpperCase(con) == 'Y'	);
 		
 		// 성적처리..
-		for (int i = 0; i < list.size(); i++) {
+		/*for (int i = 0; i < list.size(); i++) {
 			rank = 1;
 			list.get(i).rank = 1;
 			if (list.get(i)) {
 				
 			}
 
-		}
+		}*/
 		
 		System.out.printf("총 학생수 : %d\n", list.size());
 		Iterator ir = list.iterator();

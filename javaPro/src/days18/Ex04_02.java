@@ -84,7 +84,6 @@ public class Ex04_02 {
 			System.out.println(name);
 		}
 		
-		
 	} // main
 
 } // class

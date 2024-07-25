@@ -2,6 +2,7 @@ package days18;
 
 import java.time.Duration;
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.time.Period;
 
@@ -35,6 +36,25 @@ public class Ex03_09 {
 		System.out.println(d.getSeconds()/60);
 		System.out.println(d.getSeconds()/60/60);
 		System.out.println(d.getSeconds()/60/60);
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		LocalDateTime today = LocalDateTime.now();
+		LocalDateTime start = LocalDateTime.of(2023,8,10,9,0,0);
+		LocalDateTime end = LocalDateTime.of(2023,8,15,18,0,0);
+		Duration day = Duration.between(start, end);
+		System.out.println(day);
+
 		
 	} // main
 
