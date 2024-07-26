@@ -4,7 +4,7 @@ public class Student {
 
 	// 필드
 	public String name;
-	public int kor, eng, mat, tot, rank;
+	public int kor, eng, mat, tot, rank, wrank;
 	public double avg;
 	
 	public Student() {}
@@ -26,11 +26,13 @@ public class Student {
 				,name,kor,eng,mat,tot,avg,rank);
 	}
 
-
 	@Override
 	public String toString() {
 		return "Student [name=" + name + ", kor=" + kor + ", eng=" + eng + ", mat=" + mat + ", tot=" + tot + ", rank="
-				+ rank + ", avg=" + avg + "]";
+				+ rank + ", wrank=" + wrank + ", avg=" + avg + "]";
 	}
+
+
+	 
 
 }
