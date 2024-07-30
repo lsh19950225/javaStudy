@@ -5,48 +5,22 @@ import java.util.Scanner;
 public class Test01 {
 
 	public static void main(String[] args) {
-
-		/*// !@#$%^&*(\'"<>?:;
-
-		String t = "!@#$%^&*(\\'\"<>?:;";
-
-		for (int i = 0; i < t.length(); i++) {
-
-			char tArr = t.charAt(i);
-			System.out.printf("%c", tArr);
-
-		}*/
-
-		/*apple pen
-		출력 #1
-
-		applepen
-		입력 #2
-
-		Hello World!
-		출력 #2
-
-		HelloWorld!*/
-
+		
+		// 자연수 n이 입력으로 주어졌을 때 만약 n이 짝수이면 "n is even"을, 홀수이면 "n is odd"를 출력하는 코드를 작성해 보세요.
+		
 		Scanner sc = new Scanner(System.in);
 		
-		System.out.println(".");
-		
-		String aa = sc.next();
-		
-		String [] aaArr = aa.split(" ");
-		
-		String a1 = aaArr[0];
-        String a2 = aaArr[1];
+        int n = sc.nextInt();
         
-        String result = a1 + a2;
+        if (n%2 == 0) {
+			System.out.print(n + " is even");
+		} else {
+			System.out.println(n + " is odd");
+		}
+
         
-        System.out.println(result);
-		
-		
-		
-		
-		
+
+
 
 
 
